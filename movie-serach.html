@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="movie-search.css">
+</head>
+<body>
+    <header class="header">
+        <form action="" id="movie-search-form" class="movie-search-form">
+            <input type="text" placeholder="Enter Movie Title" id="movie-name">
+            <button type="submit">Search...</button>
+        </form>
+    </header>
+    <main>
+        <section class="movie-container" id="movie-container"></section>
+    </main>
+
+    <button id="prev-page" class="page-navigate" style="display: none;">⏮</button>
+    <button id="next-page" class="page-navigate" style="display: none;">⏭</button>
+    
+    <footer>
+        <p id="page-count" class="page-count"></p>
+    </footer>
+
+
+    <script src="movie-search.js"></script>
+    <!-- <script src="quick-test.js"></script> -->
+</body>
+</html>
