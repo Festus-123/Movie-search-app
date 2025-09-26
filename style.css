@@ -166,10 +166,26 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+  header{
+    padding: 10px;
+  }
     ::-webkit-scrollbar {
     width: 1px;
     height: 1px;
     }
+::-webkit-scrollbar-track {
+  background: #fdfafa34;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #ffcc70, #ff884d);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #ff784f, #ff4e90);
+}
   .movie {
     flex-direction: column;
     align-items: center;
@@ -179,6 +195,7 @@ footer {
   .details-text-info {
     text-align: center;
     margin-top: 12px;
+    padding: 10px;
   }
   .details-text-info p{
     text-align: center;
