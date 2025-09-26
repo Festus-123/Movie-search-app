@@ -51,7 +51,7 @@ async function search(event) {
 }
 
 async function getMovieData(movieName, page){
-        const ApiURL = `http://www.omdbapi.com/?apikey=f5d5baf0&s=${movieName}&page=${page}`;
+        const ApiURL = `https://www.omdbapi.com/?apikey=f5d5baf0&s=${movieName}&page=${page}`;
         const response = await fetch(ApiURL)
         // console.log(response);
         if(!response.ok) throw new Error("network error");
@@ -59,7 +59,7 @@ async function getMovieData(movieName, page){
         return response.json();
 }
 async function getMovieDetails(id) {
-        const ApiURL = `http://www.omdbapi.com/?apikey=${ApiKey}&i=${id}&plot=full`;
+        const ApiURL = `https://www.omdbapi.com/?apikey=${ApiKey}&i=${id}&plot=full`;
         const response = await fetch(ApiURL);
         // console.log(response)
         if (!response.ok) throw new Error("Network error");
